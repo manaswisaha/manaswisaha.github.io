@@ -69,14 +69,47 @@
         {%- endif -%}
         {% assign coauthor_url = null %}
         {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
-        {% if site.data.coauthors[clean_last_name] %}
-          {%- for coauthor in site.data.coauthors[clean_last_name] -%}
-            {% if coauthor.firstname contains author.first %}
+        {%- assign clean_first_name = author.first | downcase | remove_accents -%}
+        {%- assign clean_first_name_no_middle = clean_first_name | split: ' ' | first -%}
+        {%- assign first_initial = clean_first_name | split: ' ' | first | slice: 0, 1 -%}
+
+        {% comment %}Try with full name first{% endcomment %}
+        {%- assign coauthor_key = clean_last_name | append: '-' | append: clean_first_name_no_middle -%}
+        {% if site.data.coauthors[coauthor_key] %}
+          {%- for coauthor in site.data.coauthors[coauthor_key] -%}
+            {% assign first_name_match = false %}
+            {% for name_variant in coauthor.firstname %}
+              {% if author.first contains name_variant or name_variant contains author.first %}
+                {% assign first_name_match = true %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+            {% if first_name_match %}
               {%- assign coauthor_url = coauthor.url -%}
               {% break %}
             {%- endif -%}
           {% endfor %}
         {%- endif -%}
+
+        {% comment %}If not found, try with just the first initial{% endcomment %}
+        {% if coauthor_url == null %}
+          {%- assign coauthor_key = clean_last_name | append: '-' | append: first_initial -%}
+          {% if site.data.coauthors[coauthor_key] %}
+            {%- for coauthor in site.data.coauthors[coauthor_key] -%}
+              {% assign first_name_match = false %}
+              {% for name_variant in coauthor.firstname %}
+                {% if author.first contains name_variant or name_variant contains author.first %}
+                  {% assign first_name_match = true %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              {% if first_name_match %}
+                {%- assign coauthor_url = coauthor.url -%}
+                {% break %}
+              {%- endif -%}
+            {% endfor %}
+          {%- endif -%}
+        {% endif %}
 
         {%- if forloop.length > 1 -%}
           {% if forloop.first == false -%}

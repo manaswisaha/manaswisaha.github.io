@@ -1,8 +1,32 @@
-"froehlich":
+"froehlich-jon":
   - firstname: ["Jon", "J.", "J. E.", "Jon E."]
     url: https://jonfroehlich.github.io/
 
-"heer":
+"heer-jeff":
   - firstname: ["Jeff", "J.", "Jeffrey", "Jeffrey Michael", "J. M."]
     url: https://homes.cs.washington.edu/~jheer/
+
+"ju-wendy":
+  - firstname: ["Wendy", "W."]
+    url: https://wendyju.com/
+
+"agarwal-yuvraj":
+  - firstname: ["Yuvraj", "Y."]
+    url: https://www.synergylabs.org/yuvraj/
+
+"srivastava-mani":
+  - firstname: ["Mani", "M.", "Mani B.", "M. B.", "Mani B", "M B"]
+    url: https://www.ee.ucla.edu/mani-srivastava/
+
+"singh-pushpendra":
+  - firstname: ["Pushpendra", "P."]
+    url: https://www.pushpendrasingh.info/
+
+"singh-amarjeet":
+  - firstname: ["Amarjeet", "A."]
+    url: https://old.iiitd.ac.in/amarjeet
+
+"krishna-p":
+  - firstname: ["P.", "P", "P. Venkata", "P Venkata", "P.V.", "P. V."]
+    url: https://scholar.google.co.in/citations?user=Wp9gP0IAAAAJ&hl=en
 
