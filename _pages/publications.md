@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: https://scholar.google.com/citations?user=KWOTB3UAAAAJ&hl=en
+permalink: /publications/ #https://scholar.google.com/citations?user=KWOTB3UAAAAJ&hl=en
 title: publications
 description: publications by categories in reversed chronological order.
 nav: true
