@@ -10,9 +10,9 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    HCI Research Scientist
-    Human-AI Interaction
-    <p>San Francisco</p>
+    HCI Research Scientist <br/>
+    Human-AI Interaction <br/>
+    San Francisco
 
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
