@@ -193,6 +193,9 @@
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
+    {% comment %} Initialize entrymonth and entryyear to empty strings for each entry {% endcomment %}
+    {% assign entrymonth = "" %}
+    {% assign entryyear = "" %}
     {% if entry.month %}
       {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
     {% endif %}
