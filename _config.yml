@@ -9,13 +9,13 @@ last_name: Saha
 contact_note: >
   Best way to reach out is via email or LinkedIn.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Manaswi Saha is a research scientist, who works at the intersection of AI and XR, studying the next generation of technologies that will enable new worflows and tasks.
+  Manaswi Saha is a Principal Researcher & Research Manager at Accenture Labs, leading the Human-AI Collaboration Dynamics (HAICD) research program. Her work investigates how people and AI systems develop productive working relationships over time — and how to measure, support, and improve those dynamics.
 # A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 # Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: HCI, AI, research scientist, computer scientist, accenture labs, university of washington, urban accessibility # add your own keywords or leave empty
+keywords: HCI, AI, human-AI interaction, human-AI collaboration, CSCW, appropriate reliance, cognitive offloading, behavioral ontology, research manager, accenture labs, university of washington, urban accessibility # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🤖 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
